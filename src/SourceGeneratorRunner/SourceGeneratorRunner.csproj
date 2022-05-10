@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<Deterministic>true</Deterministic>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.1.0" />
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\..\LICENSE" Pack="true" PackagePath="\"></None>
+	</ItemGroup>
+
+	<PropertyGroup>
+		<Authors>maemon4095</Authors>
+		<Version>0.0.0</Version>
+		<Description>Runner for single ISourceGenerator or IIncrementalGenerator.</Description>
+		<Copyright>© maemon4095 2022</Copyright>
+		<PackageTags>sourcegenerator</PackageTags>
+		<PackageProjectUrl>https://github.com/maemon4095/SourceGeneratorRunner</PackageProjectUrl>
+		<RepositoryUrl>$(PackageProjectUrl)</RepositoryUrl>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	</PropertyGroup>
+</Project>
